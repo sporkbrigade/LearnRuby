@@ -1,0 +1,164 @@
+alias = 
+
+and = comparison operator - Checks to make sure both statements are true
+
+BEGIN = 
+
+begin = 
+
+break = breaks out of a loop. Cheesy way to end an infinite loop. Should be
+avoided.
+
+case = Like a list if IF | ELSIF statements
+
+class = OOP goodness. Define a an object with prebuilt methods and
+functionality. Then you can create any new object with these abilities.
+
+def = keyword to define a method
+
+defined? = 
+
+do = Same as {. Starts a block of code.
+
+else = Used with if or unless. It's the catch all for all the other options.
+
+elsif = Used with if or unless to define one specific alternate result.
+
+END = 
+
+end = keyword to end methods, blocks of codes, etc. For blocks of code it's
+the same as }
+
+ensure = 
+
+false = Boolean statement
+
+for = a type of loop. You can define a range of numbers, or you can iterate
+through an array / hash. Better to use .each
+
+if = Statement for branching boolean checks. Will only run a block of code if
+the attached statment is 'true'
+
+in = used with a for loop to iterate an array. eg. for x in some_array do
+something end
+
+module = a group of methods that can then be shared in other programs. Can be
+used in the same file, or even seperate files.
+
+next = 
+
+nil = nothing. Not the same as false. It's just nothing.
+
+not = used to reverse a boolean statment. Technically should be avoided if
+possible. Boolean statements should always be positive if possible.
+
+or = Same as ||. comparison operator. Will return true if either statement is
+true.
+
+redo = 
+
+rescue = 
+
+retry =
+
+return = A way to define what the method is returning. Many times redundant.
+You can just return a string for example by simply typing the string.
+
+self = a placeholder when defining methods. Mostly for refactoring
+friendliness. eg. 
+module test
+
+def self.eat
+  puts "eat"
+end
+
+vs
+
+module test
+
+def test.eat
+  puts "eat"
+end
+
+In the first option you can refactor the code and rename test to somethin
+gelse. In the second option you would have to rename the module name, and then
+every method name.
+
+super = A way to run the parent version of a method. When redefining a method
+you can change everything, but then run super to just run the parent version.
+
+then = 
+
+true = boolean result
+
+undef = 
+
+unless = like if, but only acts on a negative result
+
+until = a loop that operates until the expression is true
+
+when = 
+
+while = a loop that operates until the expression is false
+
+yield = 
+
+
+
+Data Types
+
+
+true: 1 == 1 | (3+3) == 6
+false: 1 == 0 | 3 > 6
+nil: x = nil | x = Array.new(); x[0] == nil
+constants: 
+strings: "Hello" | "This is a string."
+numbers: 1, 2, 3
+ranges: 1..5 | a..m
+arrays: x = [1, 2, 3] | x = ["String", 1, false]
+hashes: x = {:key => "value"}
+
+\\ = cancels the escape so you can have a \
+\' = keeps the ' without breaking the string 
+\" = same as \'
+\a =
+\b =
+\f = 
+\n = newline
+\r =
+\t = tab
+\v =
+
+:: =
+[] =
+** = power of
+-(unary)
++(unary)
+! = not or commit depending on context. So != is not equal to.
+~ =
+* = multiply
+/ = divide
+% = 
++ = plus
+- = subtract
+<< = push into an array
+>> = 
+& = 
+| =
+> = greater than
+>= = greater than or equal
+< = less than
+<= = less than or equal
+<=> = 
+== = is equal to?
+=== = is EXTRA equal to. Really, it just checks more things and is more picky.
+Avoid use unless you know exactly why to use it.
+!= = is not equal to
+=~ = 
+!~ = 
+&& = And
+|| = or
+.. = range
+... = range not including the last number listed. 1...5 is 1,2,3,4 while 1..5
+is 1,2,3,4,5
+4, 5
